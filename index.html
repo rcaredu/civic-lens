@@ -51,7 +51,7 @@
           <label for="menu-toggle" class="menu-button">Menu</label>
           <ul class="menu">
             <li><a href="#breaking-news">Breaking News</a></li>
-            <li><a href="#featured-aticles">Featured Articles</a></li>
+            <li><a href="#featured-articles">Featured Articles</a></li>
             <li><a href="#alerts">Alerts</a></li>
             <li><a href="#social">Social</a></li>
           </ul>
@@ -79,7 +79,7 @@
               <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
               <p>The Department of Justice has announced a full investigation into decades of water distribution
                 practices affecting tribal lands and rural communities.</p>
-              <video controls preload="metadata" width="100%">
+              <video controls preload="metadata">
                 <source src="videos/water-management.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -88,14 +88,14 @@
               <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
               <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of
                 color and those in rural areas of the country.</p>
-              <video controls preload="metadata" width="100%">
+              <video controls preload="metadata">
                 <source src="videos/voter-suppression.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </article>
           </div>
         </section>
-        <section>
+        <section id="featured-articles">
           <h2>Featured Articles</h2>
           <div class="grid">
             <article>
@@ -148,7 +148,7 @@
             </article>
           </div>
         </section>
-        <section>
+        <section id="alerts">
           <h2>Stay Informed. Stay Empowered.</h2>
           <p>Receive text messages with the news you want to know.</p>
           <form action="https://wp.zybooks.com/form-viewer.php" method="post">
@@ -163,32 +163,32 @@
             <fieldset>
               <legend>Notification Preferences</legend>
               <div>
-                <input type="checkbox" id="breaking-news" name="preferences" value="Breaking News">
-                <label for="breaking-news">Breaking News</label>
+                <input type="checkbox" id="notify-breaking-news" name="preferences" value="Breaking News">
+                <label for="notify-breaking-news">Breaking News</label>
               </div>
               <div>
-                <input type="checkbox" id="politics" name="preferences" value="Politics">
-                <label for="politics">Politics</label>
+                <input type="checkbox" id="notify-politics" name="preferences" value="Politics">
+                <label for="notify-politics">Politics</label>
               </div>
               <div>
-                <input type="checkbox" id="weather" name="preferences" value="Weather">
-                <label for="weather">Weather</label>
+                <input type="checkbox" id="notify-weather" name="preferences" value="Weather">
+                <label for="notify-weather">Weather</label>
               </div>
               <div>
-                <input type="checkbox" id="sports" name="preferences" value="Sports">
-                <label for="sports">Sports</label>
+                <input type="checkbox" id="notify-sports" name="preferences" value="Sports">
+                <label for="notify-sports">Sports</label>
               </div>
               <div>
-                <input type="checkbox" id="entertainment" name="preferences" value="Entertainment">
-                <label for="entertainment">Entertainment</label>
+                <input type="checkbox" id="notify-entertainment" name="preferences" value="Entertainment">
+                <label for="notify-entertainment">Entertainment</label>
               </div>
               <div>
-                <input type="checkbox" id="world" name="preferences" value="World">
-                <label for="world">World</label>
+                <input type="checkbox" id="notify-world" name="preferences" value="World">
+                <label for="notify-world">World</label>
               </div>
               <div>
-                <input type="checkbox" id="financial" name="preferences" value="Financial">
-                <label for="financial">Financial</label>
+                <input type="checkbox" id="notify-financial" name="preferences" value="Financial">
+                <label for="notify-financial">Financial</label>
               </div>
             </fieldset>
             <button type="submit">Subscribe</button>
@@ -197,7 +197,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer id="social">
       <div class="container">
         <h2>Follow Us</h2>
         <ul class="social">
@@ -207,7 +207,7 @@
           <li><a href="#">TikTok</a></li>
           <li><a href="#">LinkedIn</a></li>
         </ul>
-        <p class="copyright">&copy; 2025 Civic Lens. All rights reserved.</p>
+        <p class="copyright">&copy; 2026 Civic Lens. All rights reserved.</p>
       </div>
     </footer>
 
