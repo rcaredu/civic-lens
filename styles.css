@@ -256,12 +256,14 @@ body.dark-mode {
 	padding: 0.75rem 1.25rem;
 	text-transform: uppercase;
 	text-decoration: none;
+	border: 2px solid transparent;
 	transition: var(--transition);
 }
 
 .menu a:hover {
-	background-color: var(--watchdog-white);
-	color: var(--news-flash);
+	background-color: var(--blue-bulletin);
+	color: var(--watchdog-white);
+	border-color: var(--news-flash);
 }
 
 /* ///ADD/// Global Layout Styles */
@@ -282,7 +284,7 @@ h2,
 h3,
 h4 {
 	font-family: var(--font-heading);
-	font-weight: 700;
+	font-weight: 400;
 	font-optical-sizing: auto;
 	line-height: 1.2;
 }
@@ -297,7 +299,7 @@ header {
 
 header h1 {
 	font-size: 2.5rem;
-	font-variation-settings: "wght" 900, "wdth" 112, "opsz" 144;
+	font-variation-settings: "wght" 600, "wdth" 112, "opsz" 144;
 	letter-spacing: 0.02em;
 }
 
@@ -335,13 +337,14 @@ nav {
 	display: flex;
 }
 
-blockquote {
-	background: var(--blue-bulletin);
-	color: var(--watchdog-white);
-	border-left: 10px solid var(--news-flash);
-	padding: 1rem 1.25rem;
+blockquote.tagline {
+	color: var(--page-text);
 	margin-block-start: 1.5rem;
-	display: inline-block;
+	margin-inline: auto;
+	display: block;
+	width: fit-content;
+	max-width: 100%;
+	text-align: center;
 }
 blockquote:before {
 	color: var(--news-flash);
@@ -367,7 +370,7 @@ a {
 
 .grid article {
 	padding: 1.25rem;
-	border: 1mm double var(--card-border);
+	border: 2px solid var(--card-border);
 	transition: var(--transition);
 }
 
@@ -376,7 +379,9 @@ a {
 }
 
 .grid h3 {
-	margin-block-end: 0.5rem;
+	padding-block-end: 0.75rem;
+	margin-block-end: 0.75rem;
+	border-block-end: 1px solid var(--story-subtitle);
 }
 
 main {
@@ -388,11 +393,6 @@ main {
 
 main section {
 	margin-block: 3rem;
-}
-
-main section > h2 {
-	border-block-end: 3px solid var(--news-flash);
-	padding-block-end: 0.5rem;
 }
 
 main section p {
@@ -412,6 +412,11 @@ main section p {
 	color: var(--watchdog-white);
 	padding: 2rem;
 	box-shadow: var(--shadow);
+	transition: var(--transition);
+}
+
+.breaking-card:hover {
+	transform: scale(1.03);
 }
 
 .breaking-card h3 {
@@ -489,7 +494,7 @@ form input[type="checkbox"] {
 	width: 1.5rem;
 	height: 1.5rem;
 	flex-shrink: 0;
-	accent-color: var(--news-flash);
+	accent-color: var(--blue-bulletin);
 	cursor: pointer;
 }
 
@@ -507,7 +512,8 @@ form button {
 }
 
 form button:hover {
-	background-color: var(--story-subtitle);
+	background-color: var(--watchdog-white);
+	color: var(--blue-bulletin);
 }
 
 /* Footer */
@@ -533,12 +539,14 @@ footer h2 {
 	padding: 0.75rem 1.25rem;
 	text-transform: uppercase;
 	text-decoration: none;
+	border: 2px solid transparent;
 	transition: var(--transition);
 }
 
 .social a:hover {
-	background-color: var(--watchdog-white);
-	color: var(--news-flash);
+	background-color: var(--blue-bulletin);
+	color: var(--watchdog-white);
+	border-color: var(--news-flash);
 }
 
 .copyright {
