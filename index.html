@@ -72,18 +72,28 @@
             systems that shape our society.</p>
           <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
         </section>
-        <section>
+        <section id="breaking-news">
           <h2>Breaking News</h2>
-          <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
-          The Department of Justice has announced a full investigation into decades of water distribution practices
-          affecting
-          tribal lands and rural communities.
-          videos/water-management.mp4
-          <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
-          Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color
-          and
-          those in rural areas of the country.
-          videos/voter-suppression.mp4
+          <div class="breaking-grid">
+            <article class="breaking-card">
+              <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+              <p>The Department of Justice has announced a full investigation into decades of water distribution
+                practices affecting tribal lands and rural communities.</p>
+              <video controls preload="metadata" width="100%">
+                <source src="videos/water-management.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </article>
+            <article class="breaking-card">
+              <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+              <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of
+                color and those in rural areas of the country.</p>
+              <video controls preload="metadata" width="100%">
+                <source src="videos/voter-suppression.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </article>
+          </div>
         </section>
         <section>
           <h2>Featured Articles</h2>
@@ -141,18 +151,47 @@
         <section>
           <h2>Stay Informed. Stay Empowered.</h2>
           <p>Receive text messages with the news you want to know.</p>
-          <form action="">
-            Name
-            Mobile
-            Notification Preferences
-            Breaking News
-            Politics
-            Weather
-            Sports
-            Entertainment
-            World
-            Financial
-            Subscribe
+          <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name">
+            </div>
+            <div>
+              <label for="mobile">Mobile</label>
+              <input type="tel" id="mobile" name="mobile" autocomplete="tel">
+            </div>
+            <fieldset>
+              <legend>Notification Preferences</legend>
+              <div>
+                <input type="checkbox" id="breaking-news" name="preferences" value="Breaking News">
+                <label for="breaking-news">Breaking News</label>
+              </div>
+              <div>
+                <input type="checkbox" id="politics" name="preferences" value="Politics">
+                <label for="politics">Politics</label>
+              </div>
+              <div>
+                <input type="checkbox" id="weather" name="preferences" value="Weather">
+                <label for="weather">Weather</label>
+              </div>
+              <div>
+                <input type="checkbox" id="sports" name="preferences" value="Sports">
+                <label for="sports">Sports</label>
+              </div>
+              <div>
+                <input type="checkbox" id="entertainment" name="preferences" value="Entertainment">
+                <label for="entertainment">Entertainment</label>
+              </div>
+              <div>
+                <input type="checkbox" id="world" name="preferences" value="World">
+                <label for="world">World</label>
+              </div>
+              <div>
+                <input type="checkbox" id="financial" name="preferences" value="Financial">
+                <label for="financial">Financial</label>
+              </div>
+            </fieldset>
+            <button type="submit">Subscribe</button>
           </form>
         </section>
       </div>
@@ -161,12 +200,14 @@
     <footer>
       <div class="container">
         <h2>Follow Us</h2>
-        Twitter/X
-        Instagram
-        YouTube
-        TikTok
-        LinkedIn
-        &copy; 2025 Civic Lens. All rights reserved.
+        <ul class="social">
+          <li><a href="#">Twitter/X</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+        <p class="copyright">&copy; 2025 Civic Lens. All rights reserved.</p>
       </div>
     </footer>
 
